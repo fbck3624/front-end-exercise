@@ -1,0 +1,453 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.clear{
+  clear:both;
+}
+
+/*這邊是導覽列  */
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #f6f6f600;
+  }
+  
+  .navbar-default .navbar-brand {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-text {
+    color: #eceff2;
+    
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #006eff;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #000000;
+    background-color: #d8d8d8;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #000000;
+    background-color: #979797;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #000000;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #c2c2c2;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #030303;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #eceff2;
+  }
+  .navbar-default .navbar-link {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-link:hover {
+    color: #006eff;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #eceff2;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #006eff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #000000;
+      background-color: #8f8f8f;
+    }
+    
+  }
+  .navbar-center {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar-collapse-center {
+    text-align: center;
+  }
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 5px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+/* 導覽列 */
+/* 推拉門 */
+.door{
+    width: 100%;
+    height:100%;
+    margin-top: 2%;
+}
+.door img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 767px) {
+  .door{
+    width: 100%;
+    height:100%;
+    margin-top: 12%;
+  }
+.door img{
+    width: 100%;
+    height: 100%;
+  }   
+}
+/* 推拉門 */
+/* 介紹 */
+.introduce{
+    width: 100%;
+    height: 500px;
+    margin:auto;
+    background: url("img/pal00v5.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.theme{
+    display: flex;
+    width: 30%;
+    height:20%;
+    margin:auto;
+}
+.intro{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    margin:auto;    
+}
+.theme p{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.bigword{
+    width: 10%;
+    height: 100%;
+    background:url("img/main_tit_word_bg.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.bigword p{
+    text-align: right;
+    width:79%;
+    padding-top: 35%;
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.smallword{
+    width: 40%;
+    height:100%;
+    margin:auto;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height:40px;
+}
+@media (max-width: 767px) {
+  .introduce{
+    width: 100%;
+    height: 400px;
+    margin:auto;
+    background: url("img/pal00v5.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .theme{
+    display: flex;
+    width: 100%;
+    height:25%;
+    margin:auto;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  .theme img{
+    width: 50%;
+    height: 100%;
+  }
+  .theme p{
+    width:50%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 3%;
+  }
+  .intro{
+    display: flex;
+    width: 90%;
+    height: 70%;
+    margin:auto;    
+  }
+  .bigword{
+    width: 20%;
+    height: 100%;
+    background:url("img/main_tit_word_bg.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+.bigword p{
+    width:70%;
+    padding-top: 35%;
+    padding-left: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .smallword{
+    width: 60%;
+    height:100%;
+    margin:auto;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height:30px;
+  }
+}
+/* 介紹 */
+/* 角色 */
+.character{
+    width: 100%;
+    background:url("img/portfolio_bg.jpg");
+    padding-top: 50px !important;
+    padding-bottom: 10px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed!important;
+}
+.introcharacter{
+    display:flex;
+    width:70%;
+    height: 100%;
+    margin: auto;
+}
+.head{
+    padding-left: 10%;
+    width: 20%;
+    height: 100%;
+}
+.all_intro{
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+.head input{
+    width: 100px;
+    height: 100px;
+    background:#c2c2c2;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 50px;
+}
+.people{
+    width: 30%;
+    height: 100%;
+    padding-top: 10%;
+}
+.word{
+    display: block;
+    width: 70%;
+    height: 100%;
+}
+.name{
+    width: 100%;
+    height: 20%;
+}
+.intropeople{
+    width: 80%;
+    height: 80%;
+    margin:auto;
+}
+.people img{
+    width: 100%;
+    height:90%;
+}
+.name p{
+    font-size: 50px;
+    line-height:150px;
+    font-weight:bold;
+    text-align:center;
+    font-family: verdana, "Times New Roman", 微軟正黑體;
+}
+.intropeople p{
+    text-align:justify;
+    font-family: verdana, "Times New Roman", 微軟正黑體;
+    font-size: 20px;
+    line-height:30px;
+}
+.showvedio{
+    width: 50%;
+    height:400px;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background:#006eff;
+}
+iframe{
+  width:100%;
+  height:400px;
+}
+@media (max-width: 767px) {
+  .introcharacter{
+    display:block;
+    width:100%;
+    height: 100%;
+    margin: auto;
+  }
+  .head{
+    display:flex;
+    padding-left: 0%;
+    width: 90%;
+    height: 100%;
+  }
+  .all_intro{
+    display: flex;
+    width: 100%;
+    height: 450px;
+  }
+  .people{
+    width: 30%;
+    height: 100%;
+    padding-top: 30%;
+  }
+  .head input{
+    width: 50px;
+    height: 50px;
+    background:#c2c2c2;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 12%;
+  }
+  .people img{
+    width: 150px;
+    height: 200px;
+  }
+  .name p{
+    font-size: 30px;
+    line-height:60px;
+    font-weight:bold;
+    text-align:center;
+    font-family: verdana, "Times New Roman", 微軟正黑體;
+  }
+.intropeople p{
+    text-align:justify;
+    font-family: verdana, "Times New Roman", 微軟正黑體;
+    font-size: 10px;
+    line-height:20px;
+  }
+  .name{
+    height: 10%;
+  }
+  .showvedio{
+    width: 90%;
+    height:200px;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+  }
+  iframe{
+    width:100%;
+    height:200px;
+  }
+}
+/* 角色 */
+
+/* 遊戲畫面 */
+.pic img{
+    width: 100%;
+}
+/* 遊戲畫面 */
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  background: #f5f5f5;
+  
+}
+
+.contact{
+  width:50%;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.contact p{
+  line-height:10px;
+  font-size: 15px;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 767px) {
+.contact p{
+  line-height:10px;
+  font-size: 10px;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ 
+}
+.contact img{
+  width: 80%;
+}
+.contact{
+  width:50%;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+}
+
+}
+/* footer */

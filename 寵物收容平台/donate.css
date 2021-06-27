@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.wrap{
+  background-color:#adb8ca;
+  width: 100%;
+  height: 1000px;
+}
+
+/* .bgIMG{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("2.jpg");
+  opacity: 50%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat; 
+  background-size:cover;
+} */
+/*這邊是導覽列  */
+.navbar-default {
+  background-color:#D0D0D0;
+  border-color:#ADADAD;
+  opacity: 80%;
+  
+}
+.navbar-default .navbar-brand {
+  color: #eceff2;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+  
+}
+.navbar-default .navbar-nav > li > a {
+  color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:#FFFFFF;
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color:	#ADADAD;
+}
+.navbar-default .navbar-toggle {
+  border-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eceff2;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eceff2;
+}
+.navbar-default .navbar-link {
+  color: #eceff2;
+}
+.navbar-default .navbar-link:hover {
+  color: #536c8d;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #536c8d;
+    background-color: #a1e3f6;
+  }
+}
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 20px;
+}
+  /*這邊是導覽列  */
+
+/* 頁尾 */
+footer {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  bottom: 0;
+  background-color: 	#003060;
+}
+/* 如果footer有蓋住item，就把position改成absolute，bottom delete */
+.contact p{
+  line-height:10px;
+  font-size: 15px;
+  color: #eceff2;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+
+}
+.link{
+  margin-left: 47%;
+}
+/*頁尾*/
+.box{
+  background-color:#D0D0D0;
+  width: 50%;
+  margin: auto;
+  border-width: 5px;
+  border: solid black;
+  border-radius: 4%;
+  vertical-align: middle;
+}
+.box p{
+  text-align: center;
+  line-height:10px;
+  font-size: 45px;
+  font-weight:bold;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  color: #000000;
+  margin-top: 5%;
+}
+.word{
+  left: 50%;
+
+}
+.word p{
+  font-size: 30px;
+  text-align: center;
+  font-weight:bold;
+  padding: 40px ;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  line-height: 30px;
+}
+  /* 斗內 */
+
+/* 按鈕 */
+
+.btn-success{
+  height: 50px;
+  width: 170px;
+  display: flex;
+  margin-left : 30%;
+  align-items: center;
+  margin-top: 10px;
+}
+/* 按鈕 */
+#toTop{
+  position: fixed;
+  right: 80px;
+  bottom: 70px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(31, 100, 25);
+  color: white;
+  box-shadow: 0.5px 0.5px 2px #adadad;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN:hover{
+  cursor: pointer;
+  background: rgb(57, 153, 121);
+}

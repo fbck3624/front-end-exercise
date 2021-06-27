@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.clear{
+  clear:both;
+}
+
+/*這邊是導覽列  */
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #f6f6f600;
+  }
+  
+  .navbar-default .navbar-brand {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-text {
+    color: #eceff2;
+    
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #006eff;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #000000;
+    background-color: #d8d8d8;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #000000;
+    background-color: #979797;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #000000;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #c2c2c2;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #030303;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #eceff2;
+  }
+  .navbar-default .navbar-link {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-link:hover {
+    color: #006eff;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #eceff2;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #006eff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #000000;
+      background-color: #8f8f8f;
+    }
+    
+  }
+  .navbar-center {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar-collapse-center {
+    text-align: center;
+  }
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 5px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+/* 導覽列 */
+/* 購物車 */
+.page-header{
+    margin: 40px 0 0;
+    margin-top:3%;
+}
+
+.page-header h1{
+    font-size:50px;
+    text-align:center;
+}
+.page-header .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+}
+.page-header .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+}
+
+.box{
+    width: 100%;
+    background:url("img/portfolio_bg.jpg");
+    padding-top: 50px !important;
+    padding-bottom: 150px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed!important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.row{
+  margin-bottom: 3%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row img{
+    width:150px;
+    height:150px;
+    border:#000000 1px solid;
+}  
+@media (max-width: 767px) {
+  .page-header{
+    margin: 40px 0 0;
+    margin-top:15%;
+  }
+  .col-sm-6{
+    margin-bottom: 5%;
+  }
+  .box{
+    width: 100%;
+    background:url("img/portfolio_bg.jpg");
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed!important;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/* 購物車 */
+/* footer */
+footer {
+    position: absolute;
+    width: 100%;
+    background: #f5f5f5;
+    
+}
+
+.contact{
+    width:50%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.contact p{
+    line-height:10px;
+    font-size: 15px;
+    text-align: center;
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+@media (max-width: 767px) {
+  .contact p{
+    line-height:10px;
+    font-size: 10px;
+    text-align: center;
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+  }
+  .contact img{
+    width: 80%;
+  }
+  .contact{
+    width:50%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+  }
+
+}
+/* footer */

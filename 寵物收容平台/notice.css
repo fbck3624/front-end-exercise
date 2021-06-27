@@ -1,0 +1,329 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.wrap{
+  background-color:#adb8ca;
+}
+/*這邊是導覽列  */
+.navbar-default {
+  background-color:#D0D0D0;
+  border-color:#ADADAD;
+  opacity: 80%;
+  
+}
+.navbar-default .navbar-brand {
+  color: #eceff2;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+  
+}
+.navbar-default .navbar-nav > li > a {
+  color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:#FFFFFF;
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color:	#ADADAD;
+}
+.navbar-default .navbar-toggle {
+  border-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eceff2;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eceff2;
+}
+.navbar-default .navbar-link {
+  color: #eceff2;
+}
+.navbar-default .navbar-link:hover {
+  color: #536c8d;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #536c8d;
+    background-color: #a1e3f6;
+  }
+}
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 20px;
+}
+  /*這邊是導覽列  */
+
+/* 頁尾 */
+footer {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: 	#003060;
+}
+/* 如果footer有蓋住item，就把position改成absolute，bottom delete */
+.contact p{
+  line-height:10px;
+  font-size: 15px;
+  color: #eceff2;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+
+}
+.link{
+  margin-left: 47%;
+}
+/* 頁尾 */
+.notice{
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:200px;
+  }
+
+.notice p{
+      margin: auto;
+      font-size: 50px;  
+      text-align: justify;
+      font-weight:bold;
+      font-family:verdana, Times New Roman, 微軟正黑體;
+      line-height: 30px;
+  }
+  /* 注意事項 */
+.bigbox{
+    /* display: flex; */
+    width: 98%;
+    /*border: 1px solid #000;*/
+
+    
+}
+.centerBox{
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* .b_box{
+    display: flex;
+    margin-top: 40px;
+} */
+.arrange{
+  float: left;
+  width: 550px;
+  height: 230px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  background-color: 	#E0E0E0;
+  border: solid ;
+  border-width:thin;
+  border-radius: 4px;
+  /* border: 1px solid #000; */
+}
+
+
+.image{
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+.box_notice{
+    width: 200px;
+    height: 200px;
+    border-width: 3px;
+    border: solid  black;
+    border-radius: 4px;
+    /* padding-left: 40px; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.btn{
+    margin-top: 20px;
+    width:120px;
+    height:40px;
+    font-size:20px;
+    border-radius:30px;
+    margin-bottom: 5%;
+    background-color:#6C6C6C;
+    color: #FFFFFF;
+    border: none;
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    font-weight:bold;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h5{
+  margin: auto;
+  font-size: 20px;  
+  text-align: center;
+  line-height: 50px;
+  font-weight:bold;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+}
+.modal-body{
+  margin: auto;
+  font-size: 20px;  
+  text-align: center;
+  line-height: 50px;
+  font-weight:bold;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+}
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;}
+  
+  .vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;}
+  
+  .modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width:inherit;
+  max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching 
+  full width */
+  height:inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events:all;}
+  /* 注意事項 */
+
+  .word{
+    float: left;
+    width: 200px;
+    margin-left: 9%;
+    margin-right: 9%;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .title{
+    font-weight: bold;
+    font-size: 20px;  
+    text-align: center;
+  }
+  .content{
+    font-size: 14px;
+    text-align: start;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media screen and (max-width: 511px) and (min-width: 768px){
+    .arrange{
+      width: 230px;
+      height: 400px;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    .centerBox{
+      width: 99%;
+    }
+    .word{
+      margin-top: 10px;
+    }
+  }
+  @media(max-width: 511px){
+    .arrange{
+      margin-left: 25%;
+      width: 230px;
+      height: 400px;
+      margin-right: 5px;
+      
+    }
+    .centerBox{
+      width: 99%;
+    }
+    .word{
+      margin-top: 10px;
+    }
+  }
+  .clear{
+    clear:both;
+  }
+  
+#toTop{
+  position: fixed;
+  right: 80px;
+  bottom: 70px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(31, 100, 25);
+  color: white;
+  box-shadow: 0.5px 0.5px 2px #adadad;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN:hover{
+  cursor: pointer;
+  background: rgb(57, 153, 121);
+}

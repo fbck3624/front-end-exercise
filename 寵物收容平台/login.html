@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="login.css">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ 
+ 
+</head>
+<body>
+<div class="wrap">
+    <nav  class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container-fluid"> 
+            <div class="navbar-header"> 
+                <a class="navbar-brand" >
+                    <img src="logo.png" alt="Logo" style="width:60px;">
+                </a> 
+                    <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar"> 
+                        <span class="sr-only">導覽按鈕</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+            </div> 
+        
+            <div id="navbar" class="navbar-collapse collapse"> 
+                <ul class="nav navbar-nav navbar-right" style="font-size: 40px;">
+                   
+                    <li class="active" style="margin-left:30px;"><a href="#">首頁</a></li>
+                    <li><a href="animal.php" style="margin-left: 30px;">收養資訊</a></li>
+                    <li><a href="notice.php" style="margin-left: 30px;">飼養注意事項</a></li>
+                    <li><a href="shelter.php" style="margin-left: 30px;">收容所地圖</a></li>
+                    <li><a href="hospital.php" style="margin-left: 30px;">寵物醫院</a></li> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="margin-left: 30px;">關於<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="donate.html">支持我們 </a></li>
+                            <li><a href="mid.html">關於我們 </a></li>
+                        </ul>
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+     <div class="clear"></div>     
+
+    </nav>
+   
+        
+     
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="width:90%;margin:auto;">  
+            <!-- 這邊輪播的圖片我把框變小，不然圖片會變形 -->
+            <!-- 輪播（Carousel）指標 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        
+            <!-- 輪播（Carousel）專案 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="roll/09_resources_e005.jpg"  alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="roll/09_resources_e006.jpg"  alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="roll/53335_157920890916089_1464613_o.jpg"  alt="Third slide">
+                </div>
+                <div class="item">
+                    <img src="roll/wuo_speech02.jpg"  alt="Fourth slide">
+                </div>
+            </div>
+        
+            <!-- 輪播（Carousel）導航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!-- 狗種介紹 -->
+   
+        <div class="photo" >
+            <div class="box" style="background-image: url('dog1.jpg');">
+                <a href="https://zh.wikipedia.org/zh-tw/%E6%9F%B4%E7%8A%AC">
+                    <input type="button" value="柴犬▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('dog2.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E5%8D%9A%E7%BE%8E%E7%8A%AC">
+                    <input type="button" value="博美犬▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('dog3.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E5%9C%8B%E5%8F%A4%E4%BB%A3%E7%89%A7%E7%BE%8A%E7%8A%AC">
+                    <input type="button" value="古代牧羊犬▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('dog4.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E9%87%91%E6%AF%9B%E5%AF%BB%E5%9B%9E%E7%8A%AC">
+                    <input type="button" value="黃金獵犬▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('dog5.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E9%93%B6%E7%8B%90%E7%8A%AC">
+                    <input type="button" value="狐狸犬▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('dog6.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E7%B4%84%E5%85%8B%E5%A4%8F%E3%B9%B4">
+                    <input type="button" value="約克夏▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat1.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E6%B3%A2%E6%96%AF%E8%B2%93">
+                    <input type="button" value="波斯貓▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat2.jpg');">
+                <a href="https://zh.wikipedia.org/zh-tw/%E8%8B%B1%E5%9B%BD%E7%9F%AD%E6%AF%9B%E7%8C%AB">
+                    <input type="button" value="英國短毛貓▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat3.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E7%9F%AD%E5%B0%BE%E8%B2%93">
+                    <input type="button" value="日本短尾貓▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat4.jpg');">
+                <a href="https://zh.wikipedia.org/zh-tw/%E6%96%B0%E5%8A%A0%E5%9D%A1%E8%B2%93">
+                    <input type="button" value="新加坡貓▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat5.jpg');">
+                <a href="https://zh.wikipedia.org/zh-tw/%E7%9F%AD%E5%B0%BE%E8%B2%93">
+                    <input type="button" value="美國短尾猫▶" name="按鈕名稱" >
+                </a>    
+            </div>
+            <div class="box" style="background-image: url('cat6.jpg');">
+                <a href="https://zh.wikipedia.org/wiki/%E5%8A%A0%E8%8F%B2%E7%8C%AB">
+                    <input type="button" value="加菲貓▶" name="按鈕名稱" >
+                </a>    
+            </div>
+           
+            
+            <div class="clear"></div>   
+            <div class="empty" style="height: 5%;background-color:#adb8ca;">
+
+            </div>
+        
+     <footer class="navbar-static-bottom" >
+        <div class="contact" >
+           <p style="margin-top: 10px;">聯絡我們</p>
+           </br>
+           <p style="font-family:Comic Sans MS, Comic Sans, cursive;">mail：a1063307@mail.nuk.edu.tw</p>
+           </br>
+           <div class="link">
+            <a href="https://github.com/fbck3624/">
+                <i class="fa fa-github fa-3x" style="color:white"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100000627985954" style="margin-left: 5%;">
+                <i class="fa fa-facebook-square fa-3x" style="color:white"></i>
+            </a>
+           </div>
+           
+           <!-- <a href="https://github.com/fbck3624/"><img src="github.png"></a> -->
+           
+        </div>
+        <div class="clear"></div>     
+
+     </footer>
+        </div>
+     <div class="clear"></div>     
+        
+    
+    
+         <div id="toTop">
+            <a href="#top"><input class="TOPBTN" type="button" value="↑" style="font-size: 18px;">
+            </a>
+        </div>   
+</div>      
+</body>
+</html>

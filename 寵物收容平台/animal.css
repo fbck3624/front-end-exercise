@@ -1,0 +1,467 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.wrap{
+  background-color:#adb8ca;
+}
+/*這邊是導覽列  */
+.navbar-default {
+  background-color:#D0D0D0;
+  border-color:#ADADAD;
+  opacity: 80%;
+  
+}
+.navbar-default .navbar-brand {
+  color: #eceff2;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+  
+}
+.navbar-default .navbar-nav > li > a {
+  color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:#FFFFFF;
+  background-color: 	#ADADAD;
+  
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color:	#ADADAD;
+}
+.navbar-default .navbar-toggle {
+  border-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eceff2;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eceff2;
+}
+.navbar-default .navbar-link {
+  color: #eceff2;
+}
+.navbar-default .navbar-link:hover {
+  color: #536c8d;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #536c8d;
+    background-color: #a1e3f6;
+  }
+}
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 20px;
+}
+  /*這邊是導覽列  */
+
+/* 頁尾 */
+footer {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: 	#003060;
+}
+/* 如果footer有蓋住item，就把position改成absolute，bottom delete */
+.contact p{
+  line-height:10px;
+  font-size: 15px;
+  color: #eceff2;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+
+}
+.link{
+  margin-left: 47%;
+}
+/* 頁尾 */
+
+/* 搜尋 */
+.container{
+    display: flex;
+}
+
+.container p{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+   
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    line-height: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .col-md-6 {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .search .container {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container p{
+   margin:auto;
+   
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .search .container {
+    width: 900px;
+  }
+}
+@media (min-width: 992px){
+    .container {
+        /* width: 970px; */
+        width: 900px;
+    }
+}
+@media (min-width: 1200px){
+.container {
+    /* width: 1170px; */
+    width: 700px;
+}
+}
+.btn-success{
+  height: 50px;
+  width: 170px;
+  display: flex;
+  margin-left : 30%;
+  align-items: center;
+  background-color:#004B97;
+  border: 	#004B97;
+  box-shadow: 5px 5px 5px 	#4F4F4F;
+}
+@media only screen and (max-width: 767px) {
+.btn-success{
+  height: 50px;
+  width: 120px;
+}
+}
+.btn-success:hover{
+  background-color	:#0080FF;
+  border: #004B97;
+}
+/* 移動過去改變顏色 */
+.btn-success:active:hover{
+background-color:#0080FF;
+border:#004B97;
+}
+/* 按下改變顏色 */
+.btn-default {
+width:120px;
+height:40px;
+font-size:20px;
+border-radius:30px;
+margin-bottom: 5%;
+background-color:#D0D0D0;
+border: none;
+font-family:verdana, Times New Roman, 微軟正黑體;
+font-weight:bold;
+}
+/* 搜尋 */
+/* 醫院 */
+.box{
+  
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 80%;
+  height: 80%;
+  /* background-color: #97CBFF; */
+    
+}
+/* test */
+.hospital{
+    
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  height:200px;
+}
+.hospital p{
+    margin: auto;
+    font-size: 50px;  
+    text-align: justify;
+    font-weight:bold;
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    line-height: 30px;
+}
+.name{
+  margin: auto;
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 60px;
+}
+.name p{
+  
+  font-size: 40px;  
+  text-align: center;
+  font-weight:bold;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+}
+
+@media only screen and (max-width: 767px) {
+  .name p{
+   line-height: 60px;
+   font-size: 20px;  
+  }
+ }
+
+
+
+/* 醫院 */
+
+.clear{
+  clear: both;
+}
+
+
+.options{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 5%;
+  background-color: rgb(208, 208, 208);
+  font-family: verdana, "Times New Roman", 微軟正黑體;
+  font-weight: bold;
+  border-radius: 30px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  
+  
+}
+.options .option{
+  background: white;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* 領養資訊 */
+.information{
+    float:left;
+    width: 15%;
+    height: 200px;
+   
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 20px;
+    margin-bottom: 1%;   
+}
+
+.photo{
+    width: 250px;
+    height: 200px;
+}
+
+/* 領養資訊 */
+
+/* 翻牌測試 */
+ul,li {
+    margin:0;
+    padding:0;
+    list-style:none;
+    }
+    #content ul li{
+    width: 225px;
+    height: 180px;
+    }
+    #content ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+    #content ul li a > div{
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 270px;
+    height: 200px;
+    color: #536c8d;
+    }
+    #content ul li a div:first-child{
+    
+    z-index:2;
+    }
+    #content ul li a div:last-child{
+    background-color: #D2E9FF;
+    z-index:1;
+    }
+    #content ul li a > div{
+    -webkit-transition:.8s ease-in-out;
+    -moz-transition:.8s ease-in-out;
+    }
+    #content ul li a div:first-child{
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    }
+    #content ul li a div:last-child{
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    }
+    #content ul li a:hover div:first-child{
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    }
+    #content ul li a:hover div:last-child{
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    }
+    #content ul li a > div{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    }
+    #content ul li a{
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    }
+    /* 翻牌測試 */
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    .information{
+        width: 20%;
+        height: 200px;
+        
+    }
+    
+}
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .information{
+        width: 25%;
+        height: 200px;
+        
+    }
+    
+}
+@media screen and (min-width: 511px) and (max-width: 900px){
+    .information{
+        width: 40%;
+        height: 200px;
+        
+        
+    }
+    
+
+    
+    
+}
+@media(max-width: 511px){
+    .information{
+        margin-left: 50px;
+        align-items: center;
+        width: 85%;
+        height: 200px;
+        
+    }
+    .photo{
+      margin-right: auto;
+      margin-left: auto;
+      align-items: center;
+      width: 250px;
+      height: 200px;
+      
+    }
+    .col-md-8{
+      margin-left: 30px;
+    }
+    
+    .col-md-4{
+      margin-left: 6%;
+    }
+    .col-md-8{
+      margin-left: 20px;
+    }
+
+ 
+}
+.clear{
+clear:both;
+}
+  
+#toTop{
+  position: fixed;
+  right: 80px;
+  bottom: 70px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(31, 100, 25);
+  color: white;
+  box-shadow: 0.5px 0.5px 2px #adadad;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN:hover{
+  cursor: pointer;
+  background: rgb(57, 153, 121);
+}

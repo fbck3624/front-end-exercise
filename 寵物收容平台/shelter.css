@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.wrap{
+  background-color:#adb8ca;
+}
+/*這邊是導覽列  */
+.navbar-default {
+  background-color:#D0D0D0;
+  border-color:#ADADAD;
+  opacity: 80%;
+  
+}
+.navbar-default .navbar-brand {
+  color: #eceff2;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+  
+}
+.navbar-default .navbar-nav > li > a {
+  color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:#FFFFFF;
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color:	#ADADAD;
+}
+.navbar-default .navbar-toggle {
+  border-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: 	#ADADAD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eceff2;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eceff2;
+}
+.navbar-default .navbar-link {
+  color: #eceff2;
+}
+.navbar-default .navbar-link:hover {
+  color: #536c8d;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #eceff2;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #536c8d;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #536c8d;
+    background-color: #a1e3f6;
+  }
+}
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 20px;
+}
+  /*這邊是導覽列  */
+
+/* 頁尾 */
+footer {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: 	#003060;
+}
+/* 如果footer有蓋住item，就把position改成absolute，bottom delete */
+.contact p{
+  line-height:10px;
+  font-size: 15px;
+  color: #eceff2;
+  text-align: center;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+
+}
+.link{
+  margin-left: 47%;
+}
+/* 頁尾 */
+
+/* 搜尋 */
+.container{
+    display: flex;
+}
+
+.container p{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+   
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    line-height: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .col-md-6 {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px){
+.container {
+    /* width: 970px; */
+    width: 900px;
+}
+}
+@media (min-width: 1200px){
+.container {
+  /* width: 1170px; */
+  width: 700px;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .search .container {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container p{
+   margin:auto;
+   margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .search .container {
+    width: 900px;
+  }
+}
+.btn-success{
+    height: 50px;
+    width: 170px;
+    display: flex;
+    margin-left : 30%;
+    align-items: center;
+    background-color:#004B97;
+    border: 	#004B97;
+    box-shadow: 5px 5px 5px 	#4F4F4F;
+}
+@media only screen and (max-width: 767px) {
+  .btn-success{
+    height: 50px;
+    width: 120px;
+  }
+}
+.btn-success:hover{
+    background-color	:#0080FF;
+    border: #004B97;
+}
+/* 移動過去改變顏色 */
+.btn-success:active:hover{
+  background-color:#0080FF;
+  border:#004B97;
+}
+/* 按下改變顏色 */
+.btn-default {
+  width:120px;
+  height:40px;
+  font-size:20px;
+  border-radius:30px;
+  margin-bottom: 5%;
+  background-color:#D0D0D0;
+  border: none;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  font-weight:bold;
+}
+/* 搜尋 */
+/* 醫院 */
+.box{
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+  box-shadow: 10px 10px 5px 	#000000;
+  background-color: #D0D0D0;
+    
+}
+/* test */
+.hospital{
+    
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  height:200px;
+}
+.hospital p{
+    margin: auto;
+    font-size: 50px;  
+    text-align: justify;
+    font-weight:bold;
+    font-family:verdana, Times New Roman, 微軟正黑體;
+    line-height: 30px;
+}
+
+.name{
+  margin: auto;
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 60px;
+}
+.name p{
+  
+  font-size: 40px;  
+  text-align: center;
+  font-weight:bold;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+}
+
+@media only screen and (max-width: 767px) {
+  .name p{
+   line-height: 60px;
+   font-size: 20px;  
+  }
+ }
+
+.information{
+  margin: auto;
+  margin-left: 13%;
+}
+.information p{
+  margin-top: 30px;
+  font-size: 140%;  
+  line-height: 35px;
+  text-align: start;
+  font-family:verdana, Times New Roman, 微軟正黑體;
+  
+}
+@media only screen and (max-width: 767px) {
+  .information p{
+    margin-top: 30px;
+    font-size: 100%;  
+    line-height: 25px;
+    margin-right: 30px;
+    text-align: justify;
+    font-family:verdana, Times New Roman, 微軟正黑體;   
+  }
+ }
+/* 醫院 */
+/* 地圖 */
+
+.mapin{   
+  border-width: 3px;
+  border: solid  black;
+  display: table-cell;      /* ★ */
+  vertical-align: middle;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;    
+}
+/* 地圖 */
+.clear{
+  clear: both;
+}
+
+
+.options{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 5%;
+  background-color: rgb(208, 208, 208);
+  font-family: verdana, "Times New Roman", 微軟正黑體;
+  font-weight: bold;
+  border-radius: 30px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+.options .option{
+  background: white;
+  font-size: 16px;
+}
+#toTop{
+  position: fixed;
+  right: 80px;
+  bottom: 70px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(31, 100, 25);
+  color: white;
+  box-shadow: 0.5px 0.5px 2px #adadad;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+.TOPBTN:hover{
+  cursor: pointer;
+  background: rgb(57, 153, 121);
+}
