@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即時水情</title>
+    <link rel="stylesheet" href="water.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="word">
+            <p>全台水庫水情</p>
+        </div>
+        <div class="show">
+            <div class="show_word">
+                <div class="time" id="time">
+                    <p>水庫即時資訊</p>
+                    <h1></h1>
+                </div>                
+                <div class="info">
+                    <table rules="rows" class="mytable" id="mytable" border="2">
+                        <tr>
+                            <td>名稱</td>
+                            <td>流域</td>
+                            <td>水位高(公尺)</td>
+                            <td>有效蓄水量(萬立方公尺)</td>
+                            <td>百分比</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="map" class="mapin" >
+
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        // let map;
+        // var show = Array.from(Array(30), () => new Array(6));//即時水庫api
+        var intro = Array.from(Array(30), () => new Array(5)); //水庫基本資料
+        var num=0
+        var time
+        //var num2=0
+        var marker
+        map = L.map('map').setView([23.65569, 120.588669], 7.5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://www.openstreetmap.org/">OSM</a>',
+            maxZoom: 18,
+        }).addTo(map);
+
+        $.ajax({ 
+                    type: 'GET', 
+                    url: 'https://fhy.wra.gov.tw/WraApi/v1/Reservoir/Station', 
+                    dataType: 'json',
+                    async: false,
+                    success: function (response) { 
+                        $.each(response, function(index, element) {
+                            var name=element.StationName                           
+                            if(name.match("水庫")&&element.EffectiveCapacity>300||name.match("石岡壩")){
+                                console.log(name)
+                                console.log(num)
+                                intro[num][0]=element.StationNo
+                                intro[num][1]=element.StationName
+                                intro[num][2]=element.BasinName
+                                intro[num][3]=element.Latitude
+                                intro[num][4]=element.Longitude
+                                marker = L.marker([intro[num][3], intro[num][4]]);
+                                marker.bindPopup(intro[num][1]);
+                                marker.addTo(map);
+                                num++
+                                
+                            }
+                            
+
+                        });
+                         console.log(intro)
+                    },
+                    error:function(xhr){
+                        alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
+                        }
+                });
+
+        $.ajax({ 
+                    type: 'GET', 
+                    url: 'https://fhy.wra.gov.tw/WraApi/v1/Reservoir/RealTimeInfo', 
+                    dataType: 'json',
+                    async: false,
+                    success: function (response) { 
+                        $.each(response, function(index, element) {
+                            for(var i=0;i<num;i++){
+                                if(element.StationNo==intro[i][0]){
+                                    time=element.Time
+                                    // show[num2][0]=element.EffectiveStorage
+                                    // show[num2][1]=element.PercentageOfStorage
+                                    // show[num2][2]=element.Time
+                                    // show[num2][3]=element.WaterHeight
+                                    // show[num2][4]=intro[i][1]
+                                    // show[num2][5]=intro[i][2]
+                                    // console.log(show[num2][4])
+                                    $("#mytable").append("<tr>"+
+                                        "<td>"+intro[i][1]+"</td>"+
+                                        "<td>"+intro[i][2]+"</td>"+
+                                        "<td>"+element.WaterHeight+"</td>"+
+                                        "<td>"+element.EffectiveStorage+"</td>"+
+                                        "<td>"+(Math.round(element.PercentageOfStorage*100)/100)+"</td>"+
+                                        "</tr>")
+                                    // num2++
+                                    
+                                }
+                            }   
+                            
+                        }); 
+                        mytable(time)
+                    },
+                    error:function(xhr){
+                        alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
+                        }
+                });
+                function mytable(time) {
+                    var t = document.createTextNode(time);   
+                    document.querySelector("h1").append(t);
+                    var word = document.querySelector('h1');
+                    word.style.float = "right"
+                    word.style.fontSize = "15px"
+                    word.style.paddingRight="1%"
+                }
+                
+   
+			
+
+    </script>
+</body>
+</html>
